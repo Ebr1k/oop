@@ -1,0 +1,72 @@
+class general {
+-__name
+-__code
++setName()
++getName()
++setCode()
++getCode()
+}
+class index {
+-__importance
+-__unit
++setImportance()
++getImportance()
++setUnit()
++getUnit()
++printIndex()
+}
+class enterprise{
+-__requise
+-__phone
+-__contact
++setRequise()
++getRequise()
++setPhone()
++getPhone()
++setContact()
++getContact()
++printEnterprise()
++getReqEnterprise()
+}
+class requise{
+-inn
+-ogrn
+-adress
++setInn()
++getInn()
++setOgrn()
++getOgrn()
++setAdress()
++getAdress()
++printValue()
+}
+class dynamics{
+-data
+-sense
+-indexs
+-enterprises
++setData()
++getData()
++setSense()
++getSense()
++setIndexs()
++getIndexs()
++setEnterprises()
++getEnterprises()
++printInducator()
+}
+class analysis{
+-dyn1
+-dyn2
++setDyn1()
++getDyn1()
++setDyn2()
++getDyn2()
++getAnalysis()
++printAnalysis()
+}
+general <|-- itemgroup
+item <|-- container
+container o-u- item
+container o-u- itemgroup
+container o-u- container
