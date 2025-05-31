@@ -15,11 +15,11 @@ class dynamics(index, enterprise):
         if isinstance(value, enterprise):self.__enterprises = value
         else:
             self.__enterprises = None
-    def setDate(self, value):self.__data = DT.datetime.strptime(value, '%d.%m.%Y').date()
+    def setDate(self, value):self.__date = DT.datetime.strptime(value, '%d.%m.%Y').date()
     def setSense(self, value):self.__sense = value
     def getIndex(self):return self.__indexs
     def getEnterprises(self):return self.__enterprises
-    def getDate(self):return self.__data
+    def getDate(self):return self.__date
     def getSense(self):return self.__sense
 
     def getEnterpriseCode(self):
