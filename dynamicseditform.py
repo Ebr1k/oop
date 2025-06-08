@@ -14,9 +14,6 @@ class dynamicsEditForm(editForm):
     def __init__(self, parent=None, archive=None):
         """Initialize book editing form with all widgets and connections"""
         super().__init__(archive=archive, parent=parent)
-
-        # Create widgets
-
     #    self.__nameEdit = QLineEdit()
     #    self.__imgEdit = QLineEdit()
     #   self.__imgButton = QPushButton(u'найти')
@@ -29,6 +26,8 @@ class dynamicsEditForm(editForm):
         self.__indexLabel = QLabel()
         self.__senseSpin = QSpinBox()
         self.__senseSpin.setRange(0,100000)
+        self.__unitSpin = QLabel()
+
         # Configure spin boxes
     #    self.__yearSpin = QSpinBox()
     #    self.__yearSpin.setRange(-3000, QtCore.QDate.currentDate().year())
@@ -52,6 +51,8 @@ class dynamicsEditForm(editForm):
         self.addNewWidget(self.__enterpriseCombo, 1, 1)
         self.addLabel(u"значение", 2, 0)
         self.addNewWidget(self.__senseSpin, 2, 1)
+        self.addLabel(u"единица измерения", 3, 0)
+    #    self.addNewWidget(self.__unitSpin, 3, 1)
     #    self.addLabel('название', 0, 0)
     #    self.addNewWidget(self.__nameEdit, 0, 1)
     """ self.addLabel(u'обложка', 1, 0)
@@ -79,7 +80,7 @@ class dynamicsEditForm(editForm):
     #def _connect_signals(self):
     #    """Connect widget signals to their handlers"""
     #    self.__removeButton.clicked.connect(self.removeAuthor)
-    #    self.__appendButton.clicked.connect(self.appendAuthor)
+    #    self.__appendButton.clicked.connect(self.appendEnterprise)
     #    self.__imgButton.clicked.connect(self.openImg)
 
     """def openImg(self):
@@ -102,6 +103,7 @@ class dynamicsEditForm(editForm):
             self.__enterpriseCombo.setCurrentRec(self.getCurrentCode())
             self.__indexCombo.setCurrentRec(self.getCurrentCode())
             self.__senseSpin.setValue(self.getArchive().getDynamics(self.getCurrentCode()).getSense())
+        #    self.__unitSpin.setValue(self.getArchive().getDynamics(self.getCurrentCode()).getIndex().getUnit())
 
     def editClick(self):
         self.getArchive().getDynamics(self.getCurrentCode()).setName(self.__nameEdit.text())

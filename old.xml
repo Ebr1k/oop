@@ -1,16 +1,16 @@
 <archive>
-	<enterprise code="1" name="Лукойл" phone='123456789' contact="Вадим Воробьев"/>
-	<enterprise code="2" name="Сбербанк" phone='900' contact="Герман Греф"/>
-	<enterprise code="3" name="Tesla" phone='999777999' contact="Илон Маск"/>
+	<enterprise code="1" name="Сбербанк" phone='989898' contact="Герман Греф"/>
+	<enterprise code="2" name="Ozon" phone='112233456' contact="Александр Егоров"/>
+	<enterprise code="3" name="Lamoda" phone='88005' contact="Флориан Янсен"/>
 
-	<index code="1" name="Выручка" importance="1" unit="руб."/>
+	<index code="1" name="Чистая прибыль" importance="1" unit="руб."/>
 	<index code="2" name="Расходы" importance="1" unit="руб."/>
 	<index code="3" name="Индекс" importance="1" unit="пт."/>
 
 
-	<dynamics code="1" date="12.2.2023" sense="300" index="1" enterprise="1"/>
-	<dynamics code="2" date="12.2.2023" sense="100" index="2" enterprise="1"/>
+	<dynamics code="1" date="12.2.2024" sense="987" index="1" enterprise="1"/>
+	<dynamics code="2" date="12.2.2024" sense="456" index="2" enterprise="1"/>
 
-	<dynamics code="3" date="12.2.2023" sense="624" index="3" enterprise="1"/>
+	<dynamics code="3" date="12.2.2024" sense="321" index="3" enterprise="1"/>
 
 </archive>

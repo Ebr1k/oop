@@ -2,17 +2,6 @@ from dbcombobox import dbComboBox
 
 
 class indexCombo(dbComboBox):
-    """def update(self):
-
-        self.clear()
-        current_dynamics = self.getArchive().getDynamics(self.getCurrentRec())
-
-        if current_dynamics:
-            assigned_index = current_dynamics.getIndex()
-            for index in self.getArchive().getIndex():
-                if index not in assigned_index:
-                    self.addItem(index.getCode(), index.getImportance())"""
-
     def update(self):
 
         self.clear()
