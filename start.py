@@ -6,7 +6,7 @@ sys.path.insert(0, "./archiveProject.py")
 from archiveProject import archive
 from dataxml import dataxml
 from datasql import datasql
-from dynamicspagetest import dynamicspage
+from dynamicspage5_2 import dynamicspage
 from indexpagetest import indexpage
 from enterprisepagetest import enterprisepage
 
